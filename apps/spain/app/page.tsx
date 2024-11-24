@@ -5,17 +5,17 @@ import { TopicPill } from "@repo/ui/TopicPill";
 export default function Home() {
   return (
     <div>
-      <Button appName="Netherlands">Button</Button>
+      <Button appName="Países Bajos">Button</Button>
 
       <KeyStatistic
         statistic={100}
-        description="Medewerkers overal ter wereld"
+        description="Empleados en todo el mundo"
         suffix="+"
       ></KeyStatistic>
 
       <TopicPill
-        title="Met liefde"
-        description="We maken apps en websites met passie en liefde"
+        title="Con amor"
+        description="Creamos aplicaciones y sitios web con pasión y amor"
         iconName="Heart"
       ></TopicPill>
     </div>
