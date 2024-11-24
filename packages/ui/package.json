@@ -9,9 +9,9 @@
     "./Code": "./src/Code.tsx",
     "./KeyStatistic": "./src/KeyStatistic/KeyStatistic.tsx",
     "./TopicPill": "./src/TopicPill/TopicPill.tsx",
-    "./tailwindConfig": "./tailwind.config.js",
-    "./postcss": "./postcss.config.js",
-    "./style": "./src/styles.css"
+    "./tailwindConfig": "./style/tailwind.config.js",
+    "./postcss": "./style/postcss.config.js",
+    "./style": "./style/styles.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
