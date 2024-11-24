@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
 import tailwindConfig from "@repo/ui/tailwindConfig";
 
+/** @type {import('tailwindcss').Config} */
 export default {
   presets: [tailwindConfig],
 
@@ -10,5 +10,4 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [],
-} satisfies Config;
+};
