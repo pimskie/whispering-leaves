@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./BookCover": "./src/BookCover/BookCover.tsx",
     "./Button": "./src/Button/Button.tsx",
     "./Card": "./src/Card.tsx",
     "./Code": "./src/Code.tsx",
+    "./KeyStatistic": "./src/KeyStatistic/KeyStatistic.tsx",
+    "./TopicPill": "./src/TopicPill/TopicPill.tsx",
     "./tailwindConfig": "./tailwind.config.js"
   },
   "scripts": {
