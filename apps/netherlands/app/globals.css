@@ -1,37 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "@repo/ui/style";
 
 :root {
   /* Light Theme (Default) */
-  --color-brand: #c8b6e2;
-  --color-primary: #a7c7e7;
-  --color-primary-hover: #95b8dc;
+  --color-brand: #21468b; /* Bright Red */
+  --color-primary: #3c3b6e; /* Bright Blue */
+  --color-primary-hover: #1e3a78; /* Dark Blue */
 
-  --color-secondary: #b6e2d3;
-  --color-secondary-hover: #a2d3c3;
+  --color-secondary: #a4c8e1; /* Light Blue */
+  --color-secondary-hover: #7da0c7; /* Darker Light Blue */
 
-  --color-background: #faf3e0;
-  --color-text: #1a2a40;
-  --color-accent: #f6d5d5;
-  --color-border: #e0e0e0;
+  --color-background: #ffffff; /* White */
+  --color-text: #1a2a40; /* Dark Blue */
+  --color-accent: #f6d5d5; /* Soft Red */
+  --color-border: #e0e0e0; /* Light Gray */
 }
 
 /* Dark theme styles */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-brand: #8a7ca5;
-    --color-primary: #6d8ba6;
-    --color-primary-hover: #4e6c87;
-    --color-secondary: #7fa89b;
-    --color-secondary-hover: #6e9b8d;
-    --color-background: #2a2d34;
-    --color-text: #f0f0f0;
-    --color-accent: #b98b8b;
-    --color-border: #4a4a4a;
+    --color-brand: #a52a2a; /* Dark Red */
+    --color-primary: #3c3b6e; /* Bright Blue */
+    --color-primary-hover: #1e3a78; /* Dark Blue */
+    --color-secondary: #a4c8e1; /* Light Blue */
+    --color-secondary-hover: #7da0c7; /* Darker Light Blue */
+    --color-background: #2a2d34; /* Dark Background */
+    --color-text: #f0f0f0; /* Light Text */
+    --color-accent: #b98b8b; /* Soft Accent */
+    --color-border: #4a4a4a; /* Dark Border */
   }
 }
-
 /* Base styles using light theme */
 body {
   background-color: var(--color-background);
