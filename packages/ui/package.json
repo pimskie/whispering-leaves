@@ -9,7 +9,9 @@
     "./Code": "./src/Code.tsx",
     "./KeyStatistic": "./src/KeyStatistic/KeyStatistic.tsx",
     "./TopicPill": "./src/TopicPill/TopicPill.tsx",
-    "./tailwindConfig": "./tailwind.config.js"
+    "./tailwindConfig": "./style/tailwind.config.js",
+    "./postcss": "./style/postcss.config.js",
+    "./style": "./style/styles.css"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -28,6 +30,8 @@
     "typescript": "5.5.4"
   },
   "dependencies": {
+    "@storybook/react": "^8.4.5",
+    "class-variance-authority": "^0.7.1",
     "postcss": "^8.4.49",
     "react": "19.0.0-rc-5c56b873-20241107",
     "react-dom": "19.0.0-rc-5c56b873-20241107",
