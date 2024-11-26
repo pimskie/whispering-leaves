@@ -13,18 +13,19 @@ export default function (plop) {
       {
         type: "add",
         path: "src/{{pascalCase name}}/{{pascalCase name}}.tsx",
-        templateFile: "templates/component.hbs",
+        templateFile: "generators/templates/component.hbs",
       },
       {
         type: "add",
-        path: "src/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
-        templateFile: "templates/component.hbs",
+        path: "src/{{pascalCase name}}/{{pascalCase name}}.stories.ts",
+        templateFile: "generators/templates/component.stories.hbs",
       },
       {
         type: "append",
         path: "package.json",
         pattern: /"exports": {(?<insertion>)/g,
-        template: '    "./{{kebabCase name}}": "./src/{{kebabCase name}}.tsx",',
+        template:
+          '    "./{{pascalCase name}}": "./src/{{pascalCase name}}/{{pascalCase name}}.tsx",',
       },
     ],
   });
