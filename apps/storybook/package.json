@@ -1,18 +1,16 @@
 {
-  "name": "component-library",
+  "name": "storybook",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "npm run storybook",
-    "not-build": "tsc -b && vite build",
+    "build": "tsc -b && npm run build-storybook",
     "lint": "eslint .",
-    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build": "storybook build"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@repo/ui": "*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
