@@ -1,0 +1,3 @@
+import{j as o}from"./jsx-runtime-CkxqCPlQ.js";import"./index-DJO9vBfz.js";const a=({children:n})=>o.jsxs("div",{children:[o.jsx("h1",{children:"BookCover Component"}),n]});a.__docgenInfo={description:"",methods:[],displayName:"BookCover",props:{children:{required:!0,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}}};const p={component:a},e={args:{}};var r,t,s;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(t=e.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};const i=["Default"];export{e as Default,i as __namedExportsOrder,p as default};
