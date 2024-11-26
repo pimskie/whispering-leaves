@@ -1,0 +1,36 @@
+@import "@repo/ui/style";
+
+:root {
+  /* Light Theme (Default) */
+  --color-brand: #d52b1e; /* Bright Red */
+  --color-primary: #f9a800; /* Yellow */
+  --color-primary-hover: #e09e00; /* Darker Yellow */
+
+  --color-secondary: #f4c300; /* Light Yellow */
+  --color-secondary-hover: #d4a600; /* Darker Light Yellow */
+
+  --color-background: #ffffff; /* White */
+  --color-text: #1a2a40; /* Dark Text */
+  --color-accent: #f6d5d5; /* Soft Accent */
+  --color-border: #e0e0e0; /* Light Border */
+}
+
+/* Dark theme styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-brand: #a52a2a; /* Dark Red */
+    --color-primary: #f9c800; /* Bright Yellow */
+    --color-primary-hover: #e09e00; /* Darker Yellow */
+    --color-secondary: #f4c300; /* Light Yellow */
+    --color-secondary-hover: #d4a600; /* Darker Light Yellow */
+    --color-background: #2a2d34; /* Dark Background */
+    --color-text: #f0f0f0; /* Light Text */
+    --color-accent: #b98b8b; /* Soft Accent */
+    --color-border: #4a4a4a; /* Dark Border */
+  }
+}
+/* Base styles using light theme */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
