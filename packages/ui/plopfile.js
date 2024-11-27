@@ -17,8 +17,13 @@ export default function (plop) {
       },
       {
         type: "add",
-        path: "src/{{pascalCase name}}/{{pascalCase name}}.stories.ts",
+        path: "src/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
         templateFile: "generators/templates/component.stories.hbs",
+      },
+      {
+        type: "add",
+        path: "src/{{pascalCase name}}/{{pascalCase name}}.module.css",
+        templateFile: "generators/templates/component.module.hbs",
       },
       {
         type: "append",

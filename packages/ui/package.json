@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./LinkPill": "./src/LinkPill/LinkPill.tsx",
     "./BrandCard": "./src/BrandCard/BrandCard.tsx",
     "./BookCover": "./src/BookCover/BookCover.tsx",
     "./Button": "./src/Button/Button.tsx",

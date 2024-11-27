@@ -20,7 +20,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "./../../packages/ui/src/declaration.d.ts"
+    "test.d.ts",
+    "../../packages/ui/src/**/*.ts",
+    "../../packages/ui/src/**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }
