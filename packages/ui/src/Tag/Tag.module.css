@@ -1,0 +1,17 @@
+.Tag {
+  @apply inline-block;
+  @apply text-xs;
+  @apply px-4;
+  @apply py-3;
+  @apply max-w-40;
+  @apply overflow-hidden;
+  @apply text-ellipsis;
+  @apply whitespace-nowrap;
+  @apply rounded-full;
+  @apply bg-slate-200;
+}
+
+.Tag[href] {
+  @apply transition-colors;
+  @apply hover:text-blue-500;
+}

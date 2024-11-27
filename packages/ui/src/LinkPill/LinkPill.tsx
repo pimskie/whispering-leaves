@@ -1,7 +1,6 @@
 import { useMemo } from "react";
 import { Icon } from "../Icon/Icon";
 import { Link } from "../Link/Link";
-
 import styles from "./LinkPill.module.css";
 
 export interface LinkPillProps {
@@ -10,17 +9,27 @@ export interface LinkPillProps {
   children?: React.ReactNode;
 }
 
-export const LinkPill = ({ url, isExternal, children }: LinkPillProps) => {
+export const LinkPill = ({
+  url,
+  isExternal = false,
+  children,
+}: LinkPillProps) => {
   const label = useMemo(() => {
     const urlObject = new URL(url);
-    const { origin } = urlObject;
-
-    return origin;
+    return urlObject.origin;
   }, [url]);
+
   return (
-    <Link href={url} className={styles.LinkPill}>
+    <Link
+      href={url}
+      className={styles.LinkPill}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
+    >
       <span className={styles.LinkPillLabel}>{label}</span>
-      <Icon iconName="External" className={styles.LinkPillIcon} />
+      {isExternal && (
+        <Icon iconName="External" className={styles.LinkPillIcon} />
+      )}
     </Link>
   );
 };

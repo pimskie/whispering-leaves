@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./Tag": "./src/Tag/Tag.tsx",
     "./CategoryLabel": "./src/CategoryLabel/CategoryLabel.tsx",
     "./LinkPill": "./src/LinkPill/LinkPill.tsx",
     "./BrandCard": "./src/BrandCard/BrandCard.tsx",

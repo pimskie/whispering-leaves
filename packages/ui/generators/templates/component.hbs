@@ -1,11 +1,13 @@
 
+import styles from './{{ pascalCase name }}.module.css';
+
 export interface {{ pascalCase name }}Props {
   
 }
 
-export const {{ pascalCase name }} = ({ children }: { children: React.ReactNode }) => {
+export const {{ pascalCase name }} = ({  }: {{ pascalCase name }}Props) => {
   return (
-    <div>
+    <div className={ styles.{{ pascalCase name }} }>
       <h1>{{ pascalCase name }} Component</h1>
       {children}
     </div>
