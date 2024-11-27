@@ -31,6 +31,10 @@ export const BrandCard = (props: BrandCardProps) => {
           </div>
         </div>
       </div>
+
+      <div className={styles.cardWrapperFooter}>
+        <h1>{props.name}</h1>
+      </div>
     </div>
   );
 };
