@@ -22,13 +22,13 @@ const categoryColors: Record<CategoryType, { label: string; classes: string }> =
 
 // The CategoryLabel component
 export const CategoryLabel = ({ category }: CategoryLabelProps) => {
-  const { classes } = categoryColors[category];
+  const { classes, label } = categoryColors[category];
 
   return (
     <span
       className={`inline-block px-2 py-1 text-xs font-semibold uppercase rounded ${classes}`}
     >
-      {category}
+      {label}
     </span>
   );
 };
