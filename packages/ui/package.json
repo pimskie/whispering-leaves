@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./SiteNavigation": "./src/SiteNavigation/SiteNavigation.tsx",
     "./Tag": "./src/Tag/Tag.tsx",
     "./CategoryLabel": "./src/CategoryLabel/CategoryLabel.tsx",
     "./LinkPill": "./src/LinkPill/LinkPill.tsx",

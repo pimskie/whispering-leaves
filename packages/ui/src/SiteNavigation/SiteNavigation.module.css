@@ -1,0 +1,72 @@
+.SiteNavigation {
+  @apply bg-white;
+  @apply shadow-sm;
+}
+
+.nav {
+  @apply bg-white;
+  @apply shadow-sm;
+}
+
+.navList {
+  @apply w-full;
+  @apply md:flex;
+  @apply justify-center;
+  @apply gap-3;
+  @apply p-4;
+}
+
+.navLink {
+  @apply relative;
+  @apply block;
+
+  @apply px-4;
+  @apply py-2;
+  @apply rounded-full;
+  @apply text-sm;
+  @apply text-center;
+  @apply font-medium;
+  @apply overflow-hidden;
+
+  @apply before:-z-0;
+  @apply md:inline-block;
+  @apply md:text-left;
+
+  @apply before:absolute;
+  @apply before:inset-0;
+  @apply before:inline-block;
+  @apply before:w-full;
+  @apply before:h-full;
+  @apply before:bg-purple-200;
+  @apply before:-translate-x-full;
+  @apply hover:before:translate-x-0;
+
+  @apply before:transition-transform;
+  @apply before:duration-200;
+  @apply before:motion-reduce:transition-none;
+
+  @apply before:ease-out;
+  @apply before:duration-150;
+}
+
+.navLabel {
+  @apply relative;
+  @apply z-10;
+}
+
+.activeLink {
+  @apply bg-purple-500;
+  @apply text-white;
+}
+
+.inactiveLink {
+  @apply text-gray-700;
+  @apply focus:outline;
+  @apply focus:outline-2;
+  @apply focus:outline-offset-2;
+  @apply focus:outline-purple-400;
+  @apply active:outline;
+  @apply active:outline-2;
+  @apply active:outline-offset-2;
+  @apply active:outline-purple-200;
+}
