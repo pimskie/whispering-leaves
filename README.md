@@ -1,3 +1,8 @@
+## Next 15 with React 19 RC
+
+https://github.com/vercel/next.js/issues/72026
+https://github.com/vercel/next.js/issues/72204
+
 # Turborepo starter
 
 This is an official starter Turborepo.
