@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { SiteNavigation } from "./SiteNavigation";
+import { DesktopNavigation } from "./DesktopNavigation";
 
 const meta = {
-  title: "SiteNavigation",
-  component: SiteNavigation,
+  title: "navigation/DesktopNavigation",
+  component: DesktopNavigation,
 
   parameters: {
     layout: "fullscreen",
   },
 
   tags: ["autodocs"],
-} satisfies Meta<typeof SiteNavigation>;
+} satisfies Meta<typeof DesktopNavigation>;
 
 export default meta;
 

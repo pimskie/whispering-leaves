@@ -1,17 +1,13 @@
-import styles from "./SiteNavigation.module.css";
+import styles from "./DesktopNavigation.module.css";
 import { Link } from "../Link/Link";
 
-export interface NavigationItem {
-  id: string;
-  link: string;
-  label: string;
-}
+import type { NavigationItem } from "../../types/NavigationItem";
 
-export interface SiteNavigationProps {
+export interface DesktopNavigationProps {
   items: NavigationItem[];
 }
 
-export const SiteNavigation = ({ items }: SiteNavigationProps) => {
+export const DesktopNavigation = ({ items }: DesktopNavigationProps) => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>

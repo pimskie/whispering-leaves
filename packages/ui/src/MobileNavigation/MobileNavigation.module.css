@@ -1,0 +1,69 @@
+.MobileNavigation {
+  @apply fixed;
+  @apply w-full;
+  @apply h-full;
+  @apply inset-0;
+}
+
+.MobileNavigationToggle {
+  @apply fixed;
+  @apply top-4;
+  @apply right-4;
+  @apply z-10;
+
+  @apply text-sm;
+  @apply w-11;
+  @apply aspect-square;
+  @apply rounded-full;
+  @apply border-4;
+  @apply border-secondary;
+
+  @apply drop-shadow-lg;
+
+  @apply transition-colors;
+  @apply hover:bg-secondary;
+}
+
+.MobileNavigationBackground {
+  @apply fixed;
+  @apply inset-0;
+  @apply w-full;
+  @apply h-full;
+}
+
+.MobileNavigationBackground path {
+  @apply fill-primary;
+}
+
+.MobileNavigationNav {
+  @apply relative;
+  @apply z-10;
+
+  @apply w-full;
+  @apply h-full;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+}
+
+.MobileNavigationNav.is-hidden {
+  @apply hidden;
+}
+
+.MobileNavigationList {
+  @apply space-y-2;
+}
+
+.MobileNavigationLink {
+  @apply text-2xl;
+  @apply uppercase;
+  @apply text-center;
+  @apply text-gray-800;
+  @apply block;
+
+  @apply p-4;
+  @apply rounded-full;
+  @apply transition-colors;
+
+  @apply hover:bg-purple-200;
+}

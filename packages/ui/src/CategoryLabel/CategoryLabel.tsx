@@ -7,7 +7,7 @@ export interface CategoryLabelProps {
 const categoryColors: Record<CategoryType, { label: string; classes: string }> =
   {
     stories: {
-      label: "PMV Stories",
+      label: "PVM Stories",
       classes: "bg-red-100 text-red-800",
     },
     careers: {
