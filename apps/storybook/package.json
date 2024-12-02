@@ -7,7 +7,7 @@
     "dev": "npm run storybook",
     "build": "tsc -b && npm run build-storybook",
     "lint": "eslint .",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "@eslint/js": "^9.13.0",
     "@storybook/addon-essentials": "^8.4.5",
     "@storybook/addon-interactions": "^8.4.5",
-    "@storybook/addon-onboarding": "^8.4.5",
+    "@storybook/addon-viewport": "^8.4.5",
     "@storybook/blocks": "^8.4.5",
     "@storybook/react": "^8.4.5",
     "@storybook/react-vite": "^8.4.5",

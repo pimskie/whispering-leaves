@@ -1,0 +1,87 @@
+.cardWrapper {
+  @apply relative;
+  @apply flex;
+  @apply flex-col;
+  @apply gap-3;
+
+  width: clamp(15rem, 50%, 100%);
+  aspect-ratio: 1/1.25;
+
+  perspective: 1500px;
+}
+
+.card {
+  /* position: absolute; */
+  @apply w-full;
+  @apply h-full;
+
+  @apply transition-transform;
+  @apply duration-500;
+  @apply ease-out;
+
+  @apply cursor-pointer  flex content-center;
+
+  transform-style: preserve-3d;
+}
+
+.cardFace {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+
+  @apply p-5;
+  @apply text-sm;
+  @apply rounded-2xl;
+}
+
+.cardFaceFront {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+}
+.cardFaceBack {
+  transform: rotateY(180deg);
+}
+
+.cardFaceBackgroundDiffuser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @apply bg-white;
+  @apply opacity-50;
+}
+
+.cardFaceContent {
+  @apply z-10;
+  @apply relative;
+  @apply h-full;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-between;
+  @apply items-start;
+  @apply p-5;
+}
+
+.cardWrapper:hover .card {
+  transform: rotateY(180deg);
+}
+
+.cardFaceFrontContent {
+  max-width: 60%;
+}
+
+.cardFaceFrontContent > * {
+  @apply w-full;
+}
+
+.cardWrapperFooter {
+  @apply transition-transform;
+  @apply duration-500;
+  @apply ease-out;
+}
+.cardWrapper:hover .cardWrapperFooter {
+  @apply translate-x-3;
+}

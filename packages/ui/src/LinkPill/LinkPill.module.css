@@ -1,0 +1,22 @@
+.LinkPill {
+  @apply inline-flex;
+  @apply flex-row;
+  @apply items-center;
+  @apply gap-3;
+  @apply px-3 py-2;
+  @apply text-xs;
+  @apply rounded-full;
+  @apply bg-slate-200;
+
+  @apply transition-colors;
+
+  @apply hover:bg-slate-300;
+}
+
+.LinkPillLabel {
+  @apply whitespace-nowrap;
+}
+
+.LinkPillIcon {
+  @apply w-6;
+}
