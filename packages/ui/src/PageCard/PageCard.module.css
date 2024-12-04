@@ -1,0 +1,53 @@
+.PageCard {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-areas:
+    "image"
+    "title"
+    "content";
+
+  &:hover .PageCardImageContainer {
+    background-size: 102%;
+  }
+}
+
+.PageCardHorizontal {
+  grid-template-areas:
+    "image title"
+    "image content";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.PageCardImageContainer {
+  width: 100%;
+  aspect-ratio: 2/1.25;
+
+  grid-area: image;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: end;
+
+  padding: 1rem;
+
+  background-size: 100%;
+  background-position: center center;
+
+  transition: background-size 0.4s ease-out;
+
+  & .PageCardTag + .PageCardTag {
+    margin-inline-start: 0.5rem;
+  }
+}
+
+.PageCardTitle {
+  grid-area: title;
+}
+
+.PageCardContent {
+  grid-area: content;
+}

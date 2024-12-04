@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "exports": {
+    "./SectionHeading": "./src/SectionHeading/SectionHeading.tsx",
+    "./PageCard": "./src/PageCard/PageCard.tsx",
     "./ResponsiveNavigation": "./src/ResponsiveNavigation/ResponsiveNavigation.tsx",
     "./MobileNavigation": "./src/MobileNavigation/MobileNavigation.tsx",
     "./DesktopNavigation": "./src/DesktopNavigation/DesktopNavigation.tsx",
