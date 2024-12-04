@@ -1,0 +1,22 @@
+.SectionHeading {
+  --scale: 1;
+  --min-size: max(calc(var(--scale) * 1rem), 0.85rem);
+
+  font-size: clamp(
+    var(--min-size),
+    calc(var(--scale) * 4vw),
+    calc(var(--scale) * 2.5rem)
+  );
+}
+
+.h2 {
+  --scale: 0.95;
+}
+
+.h3 {
+  --scale: 0.8;
+}
+
+.h4 {
+  --scale: 0.5;
+}
