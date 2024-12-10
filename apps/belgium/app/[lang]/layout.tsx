@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { dir } from "i18next";
 
 import { languages } from "../i18n/settings";
 import "../globals.css";

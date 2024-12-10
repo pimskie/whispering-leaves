@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@repo/ui": "*",
+    "accept-language": "^3.0.20",
     "i18next": "^24.0.5",
     "i18next-resources-to-backend": "^1.2.1",
     "next": "15.0.3",
