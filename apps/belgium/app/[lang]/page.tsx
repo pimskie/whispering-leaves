@@ -1,5 +1,3 @@
-import { Trans } from "react-i18next/TransWithoutContext";
-
 import { Link } from "@repo/ui/Link";
 import { useTranslation } from "../i18n";
 import { languages } from "../i18n/settings";
